@@ -1,0 +1,67 @@
+/** @format */
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+#wrapper > div {
+  border: 1px solid black;
+  min-height: 100px;
+  min-width: 30%;
+}
+
+.error {
+  color: red;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #e7f4f9;
+}
+
+tr:hover {
+  background-color: #eaeaea;
+}
+
+table {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#myOrders {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
