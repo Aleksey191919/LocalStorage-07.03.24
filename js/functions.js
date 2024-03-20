@@ -279,7 +279,8 @@ function showOrders(orders) {
   }
 }
 
-function showOrderDetails(order) {``
+function showOrderDetails(order) {
+  ``;
   const div = document.createElement('div');
 
   div.innerHTML = `
@@ -304,11 +305,7 @@ function deleteOrder(orderID) {
   if (orderIndex !== -1) {
     orders.splice(orderIndex, 1);
     saveOrdersToLocalStorage(orders);
+    const orderDetailsDiv = document.getElementById('order-details');
+    orderDetailsDiv.innerHTML = '';
   }
-}
-
-function clearOrders() {
-  const orderList = document.getElementById('order-list');
-  orderList.innerHTML = '';
-  showOrders(orders);
 }

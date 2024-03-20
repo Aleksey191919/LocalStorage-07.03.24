@@ -22,5 +22,10 @@ document.getElementById('products').addEventListener('click', (event) => {
 document.getElementById('ordersButton').addEventListener('click', () => {
   document.getElementById('orderSummary').innerHTML = '';
   document.getElementById('wrapper').innerHTML = '';
+  document.getElementById('backButton').style.display = 'block';
   showOrders(orders);
+});
+
+document.getElementById('backButton').addEventListener('click', function () {
+  window.location.reload();
 });
