@@ -247,6 +247,7 @@ function createOrderId(product, userData) {
 
 function showOrders(orders) {
   const orderList = document.getElementById('order-list');
+  orderList.innerHTML = '';
 
   if (orders.length >= 1) {
     orders.forEach((order) => {
